@@ -1,0 +1,4 @@
+.image-crop {
+	-webkit-clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+  clip-path: polygon(0 0, 0 70%, 100% 100%, 100% 0);
+}

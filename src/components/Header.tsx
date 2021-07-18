@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../drawables/logo.svg";
-import HeaderBg from "../drawables/header-bg.png";
+import HeaderBg from "../drawables/header-bg.webp";
 import "./Header.css";
 
 function Header() {

@@ -14,7 +14,7 @@ function Header() {
           alt=""
         />
       </div>
-      <div className="flex z-10 absolute">
+      <div className="flex z-10 absolute p-8">
         <img src={Logo} alt="" />
       </div>
     </div>

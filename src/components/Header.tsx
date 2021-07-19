@@ -6,7 +6,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <div className="flex flex-col w-full h-full relative">
+    <div className="flex flex-col w-full h-screen relative">
       <div className="z-0 image-crop bg-burnt-orange pb-4 h-full w-full">
         <img
           id="header-bg"
@@ -41,7 +41,7 @@ function Header() {
 
         <div className="flex flex-col h-1/4 w-full justify-center items-start">
           <img src={AboutBike} alt="" className="h-2/5" />
-					<h2 className="text-4xl text-burnt-orange font-tomorrow pt-4">ABOUT US</h2>
+					<h2 className="text-4xl text-burnt-orange font-tomorrow font-bold pt-4">ABOUT US</h2>
         </div>
       </div>
     </div>

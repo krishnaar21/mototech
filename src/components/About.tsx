@@ -2,10 +2,21 @@ import React from "react";
 import AboutBike from "../drawables/about-vert-bike.webp";
 import GearIcon from "../drawables/gearicon.svg";
 import BikeIcon from "../drawables/bikeicon.svg";
+import Enfield from "../drawables/enfieldlogo.svg";
+import Davidson from "../drawables/davidsonlogo.svg";
+import KTM from "../drawables/ktmlogo.svg";
+import Hero from "../drawables/herologo.svg";
+import Yamaha from "../drawables/yamahalogo.svg";
+import Suzuki from "../drawables/suzukilogo.svg";
+import Bajaj from "../drawables/bajajlogo.svg";
+import Mahindra from "../drawables/mahindralogo.svg";
+import Vespa from "../drawables/vespalogo.svg";
+import Aprilia from "../drawables/aprilialogo.svg";
+import Jawa from "../drawables/jawalogo.svg";
 
 function About() {
   return (
-    <div className="flex flex-col text-xl w-full h-screen items-start px-24">
+    <div className="flex flex-col text-xl w-full items-start px-24 overflow-hidden">
       <p className="font-poppins font-regular text-dark-grey w-3/4">
         Started in 2017 by an ardent bike-lover, Mototech was born out of sheer
         passion for motorbikes, and has grown to be a high-powered name in the
@@ -56,13 +67,18 @@ function About() {
       <h2 className="font-tomorrow font-bold text-burnt-orange text-3xl pt-16">
         EXPERTS IN EVERY BRAND
       </h2>
-      <div className="w-full">
-        <p>PLACEHOLDER</p>
-        <p>PLACEHOLDER</p>
-        <p>PLACEHOLDER</p>
-        <p>PLACEHOLDER</p>
-        <p>PLACEHOLDER</p>
-        <p>PLACEHOLDER</p>
+      <div className="flex w-full overflow-x-auto pt-8">
+				<img src={Enfield} alt="" />
+				<img src={Davidson} alt="" className="pl-8" />
+				<img src={KTM} alt="" className="pl-8" />
+				<img src={Hero} alt="" className="pl-8" />
+				<img src={Yamaha} alt="" className="pl-8" />
+				<img src={Suzuki} alt="" className="pl-8" />
+				<img src={Bajaj} alt="" className="pl-8" />
+				<img src={Mahindra} alt="" className="pl-8" />
+				<img src={Vespa} alt="" className="pl-8" />
+				<img src={Aprilia} alt="" className="pl-8" />
+				<img src={Jawa} alt="" className="pl-8" />
       </div>
 
       <h2 className="font-tomorrow font-bold text-burnt-orange text-3xl pt-16">

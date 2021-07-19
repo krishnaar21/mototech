@@ -11,9 +11,9 @@
     font-family: "Tomorrow", sans-serif;
   }
 
-	.font-inter {
-		font-family: 'Inter', sans-serif;
-	}
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
 }
 
 #root {
@@ -25,4 +25,20 @@ html,
 body {
   width: 100%;
   height: 100%;
+}
+
+body {
+	overflow: overlay;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  @apply bg-burnt-orange;
 }

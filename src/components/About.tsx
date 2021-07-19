@@ -13,6 +13,8 @@ import Mahindra from "../drawables/mahindralogo.svg";
 import Vespa from "../drawables/vespalogo.svg";
 import Aprilia from "../drawables/aprilialogo.svg";
 import Jawa from "../drawables/jawalogo.svg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function About() {
   return (
@@ -28,7 +30,7 @@ function About() {
       <h3 className="font-poppins font-bold text-2xl pt-16">
         AFFORDABLE SERVICE
       </h3>
-      <h2 className="font-tomorrow font-bold text-burnt-orange text-3xl">
+      <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl">
         EXCEPTIONAL RESULTS
       </h2>
 
@@ -64,24 +66,24 @@ function About() {
         </div>
       </div>
 
-      <h2 className="font-tomorrow font-bold text-burnt-orange text-3xl pt-16">
+      <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl pt-16">
         EXPERTS IN EVERY BRAND
       </h2>
       <div className="flex w-full overflow-x-auto pt-8">
-				<img src={Enfield} alt="" />
-				<img src={Davidson} alt="" className="pl-8" />
-				<img src={KTM} alt="" className="pl-8" />
-				<img src={Hero} alt="" className="pl-8" />
-				<img src={Yamaha} alt="" className="pl-8" />
-				<img src={Suzuki} alt="" className="pl-8" />
-				<img src={Bajaj} alt="" className="pl-8" />
-				<img src={Mahindra} alt="" className="pl-8" />
-				<img src={Vespa} alt="" className="pl-8" />
-				<img src={Aprilia} alt="" className="pl-8" />
-				<img src={Jawa} alt="" className="pl-8" />
+        <img src={Enfield} alt="" />
+        <img src={Davidson} alt="" className="pl-8" />
+        <img src={KTM} alt="" className="pl-8" />
+        <img src={Hero} alt="" className="pl-8" />
+        <img src={Yamaha} alt="" className="pl-8" />
+        <img src={Suzuki} alt="" className="pl-8" />
+        <img src={Bajaj} alt="" className="pl-8" />
+        <img src={Mahindra} alt="" className="pl-8" />
+        <img src={Vespa} alt="" className="pl-8" />
+        <img src={Aprilia} alt="" className="pl-8" />
+        <img src={Jawa} alt="" className="pl-8" />
       </div>
 
-      <h2 className="font-tomorrow font-bold text-burnt-orange text-3xl pt-16">
+      <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl pt-16">
         TAKING YOUR RIDE TO THE NEXT LEVEL
       </h2>
       <p className="font-poppins text-dark-grey pt-4 text-xl">
@@ -90,6 +92,65 @@ function About() {
       <p className="font-poppins text-dark-grey text-xl">
         Check out some of our amazing motorbike transformations.
       </p>
+      <Carousel>
+        <div>
+          <img
+            alt=""
+            src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg"
+          />
+          <p className="legend">Legend 1</p>
+        </div>
+        <div>
+          <img
+            alt=""
+            src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg"
+          />
+          <p className="legend">Legend 2</p>
+        </div>
+        <div>
+          <img
+            alt=""
+            src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg"
+          />
+          <p className="legend">Legend 3</p>
+        </div>
+        <div>
+          <img
+            alt=""
+            src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg"
+          />
+          <p className="legend">Legend 4</p>
+        </div>
+      </Carousel>
+
+      <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl pt-16">
+        WHAT OUR CLIENTS SAY
+      </h2>
+      <p className="font-poppins text-dark-grey pt-4 text-xl">
+        We, at Mototech, are dedicated to impeccable service and committed to
+        client satisfaction. Here’s what our clients have to say about their
+        experience with us.
+      </p>
+      <Carousel autoPlay infiniteLoop interval={5000}>
+        <div className="flex flex-col items-start">
+          <p className="font-poppins pt-4 text-xl">
+            “5 stars for the services and the way they attend to the customers.
+            Mainly the owner, Jeevan Reddy. Best and trusted service center.”
+          </p>
+          <p className="font-poppins pt-4 text-xl font-bold">
+            - <span className="text-burnt-orange">Amir MA</span>
+          </p>
+        </div>
+        <div className="flex flex-col items-start">
+          <p className="font-poppins pt-4 text-xl">
+            “5 stars for the services and the way they attend to the customers.
+            Mainly the owner, Jeevan Reddy. Best and trusted service center.”
+          </p>
+          <p className="font-poppins pt-4 text-xl font-bold">
+            - <span className="text-burnt-orange">Amir MA</span>
+          </p>
+        </div>
+      </Carousel>
     </div>
   );
 }

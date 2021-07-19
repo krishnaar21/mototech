@@ -10,6 +10,10 @@
   .font-tomorrow {
     font-family: "Tomorrow", sans-serif;
   }
+
+	.font-inter {
+		font-family: 'Inter', sans-serif;
+	}
 }
 
 #root {

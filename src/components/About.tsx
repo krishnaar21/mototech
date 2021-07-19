@@ -23,8 +23,9 @@ function About() {
 
       <div className="flex w-full pt-8">
         <img className="w-1/3" src={AboutBike} alt="" />
-        <div className="flex flex-col flex-1">
-          <div className="flex flex-col pl-8 justify-center">
+
+        <div className="flex flex-col flex-1 justify-center">
+          <div className="flex flex-col pl-8">
             <img src={GearIcon} alt="" className="w-20" />
             <h2 className="font-inter font-extrabold text-4xl pt-4">Service</h2>
             <p className="font-poppins text-dark-grey pt-4 text-xl">
@@ -51,6 +52,28 @@ function About() {
           </div>
         </div>
       </div>
+
+      <h2 className="font-tomorrow font-bold text-burnt-orange text-3xl pt-16">
+        EXPERTS IN EVERY BRAND
+      </h2>
+      <div className="w-full">
+        <p>PLACEHOLDER</p>
+        <p>PLACEHOLDER</p>
+        <p>PLACEHOLDER</p>
+        <p>PLACEHOLDER</p>
+        <p>PLACEHOLDER</p>
+        <p>PLACEHOLDER</p>
+      </div>
+
+      <h2 className="font-tomorrow font-bold text-burnt-orange text-3xl pt-16">
+        TAKING YOUR RIDE TO THE NEXT LEVEL
+      </h2>
+      <p className="font-poppins text-dark-grey pt-4 text-xl">
+        A treat for the biker in you!
+      </p>
+      <p className="font-poppins text-dark-grey text-xl">
+        Check out some of our amazing motorbike transformations.
+      </p>
     </div>
   );
 }

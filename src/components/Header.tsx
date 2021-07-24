@@ -37,6 +37,7 @@ function Header() {
           <button className="font-tomorrow font-medium text-white text-xl bg-burnt-orange px-4 py-2 rounded-none">
             CONTACT US
           </button>
+					<div className="md:hidden block w-full h-32"></div>
         </div>
 
         <div className="flex flex-col h-1/4 w-full justify-center items-start">

@@ -13,7 +13,7 @@ function Footer() {
       className="flex flex-col w-full justify-between items-center md:p-24 p-12 footer-bg"
       style={{ height: "70%", backgroundImage: `url(${FooterBike})` }}
     >
-      <h2 className="font-poppins text-white text-5xl">
+      <h2 className="font-poppins text-white md:text-5xl text-2xl">
         <span className="text-burnt-orange">”</span>It’s not about the
         destination. It’s about the ride!
         <span className="text-burnt-orange">“</span>
@@ -21,8 +21,8 @@ function Footer() {
 
       <div className="bottom-0 left-0 flex flex-col md:flex-row w-full justify-evenly items-start pt-16">
         <div className="flex flex-col flex-1">
-          <img src={Logo} alt="" />
-          <p className="font-poppins text-white text-2xl pt-8">
+          <img src={Logo} className="w-48 md:w-auto" alt="" />
+          <p className="font-poppins text-white md:text-2xl text-lg pt-8">
             Visit us for reliable repairs, superior service, and creative
             customisation.
           </p>
@@ -31,7 +31,7 @@ function Footer() {
           <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl">
             Address
           </h2>
-          <p className="font-poppins text-white text-2xl pt-8">
+          <p className="font-poppins text-white md:text-2xl text-lg pt-8">
             1-26-22/1, Subash Nagar, Gollaguda Kaman, Secunderabad, Telangana
             500015.
           </p>
@@ -41,10 +41,10 @@ function Footer() {
             <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl">
               Contact us
             </h2>
-            <p className="font-poppins text-white text-2xl pt-8">
+            <p className="font-poppins text-white md:text-2xl text-lg pt-8">
               +91 91004 02098
             </p>
-            <p className="font-poppins text-white text-2xl pt-2">
+            <p className="font-poppins text-white md:text-2xl text-lg pt-2">
               +91 7095813250
             </p>
 
@@ -52,10 +52,10 @@ function Footer() {
               Follow us
             </h2>
             <div className="flex pt-8">
-              <a href="https://www.facebook.com/mototechmbs">
+              <a href="https://www.instagram.com/mototech_mbs/">
                 <img src={Instagram} className="w-16" alt="" />
               </a>
-              <a href="https://www.instagram.com/mototech_mbs/">
+              <a href="https://www.facebook.com/mototechmbs">
                 <img src={Facebook} className="w-16" alt="" />
               </a>
             </div>

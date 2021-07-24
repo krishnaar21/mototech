@@ -1,0 +1,9 @@
+.carousel .control-dots {
+	display: flex;
+	align-items: center;
+	bottom: -10px;
+}
+
+.carousel.carousel-slider {
+	padding-bottom: 4rem;
+}

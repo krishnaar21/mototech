@@ -16,6 +16,7 @@ import Jawa from "../drawables/jawalogo.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Testimonial from "./Testimonial";
+import "./About.css"
 
 function About() {
   return (
@@ -135,12 +136,57 @@ function About() {
       <div style={{ width: "100%" }}>
         <Carousel
           autoPlay
-					dynamicHeight
+          dynamicHeight
           infiniteLoop
           interval={5000}
           showArrows={false}
           showStatus={false}
           width="100%"
+          renderIndicator={(click, isSelected, index, label) => {
+            if (isSelected) {
+              return (
+                <li className="inline-block px-1 cursor-pointer" onClick={click}>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.970566"
+                      y="12"
+                      width="16"
+                      height="16"
+                      transform="rotate(-45 0.970566 12)"
+                      fill="#FE4D01"
+                    />
+                  </svg>
+                </li>
+              );
+            } else {
+              return (
+                <li className="inline-block px-1 cursor-pointer" onClick={click}>
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      opacity="0.25"
+                      y="9"
+                      width="12"
+                      height="12"
+                      transform="rotate(-45 0 9)"
+                      fill="black"
+                    />
+                  </svg>
+                </li>
+              );
+            }
+          }}
         >
           <Testimonial
             body="5 stars for the services and the way they attend to the customers.

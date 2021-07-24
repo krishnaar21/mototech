@@ -19,8 +19,8 @@ import Testimonial from "./Testimonial";
 
 function About() {
   return (
-    <div className="flex flex-col text-xl w-full items-start px-24 overflow-hidden">
-      <p className="font-poppins font-regular text-dark-grey w-3/4">
+    <div className="flex flex-col text-xl w-full items-start md:px-24 px-8 overflow-hidden">
+      <p className="font-poppins font-regular text-dark-grey md:w-3/4 w-full">
         Started in 2017 by an ardent bike-lover, Mototech was born out of sheer
         passion for motorbikes, and has grown to be a high-powered name in the
         field of motorbike service, repair and customisation. Our knowledge,
@@ -36,10 +36,10 @@ function About() {
       </h2>
 
       <div className="flex w-full pt-8">
-        <img className="w-1/3" src={AboutBike} alt="" />
+        <img className="hidden md:block w-1/3" src={AboutBike} alt="" />
 
         <div className="flex flex-col flex-1 justify-center">
-          <div className="flex flex-col pl-8">
+          <div className="flex flex-col md:pl-8">
             <img src={GearIcon} alt="" className="w-20" />
             <h2 className="font-inter font-extrabold text-4xl pt-4">Service</h2>
             <p className="font-poppins text-dark-grey pt-4 text-xl">
@@ -51,7 +51,7 @@ function About() {
             </p>
           </div>
 
-          <div className="flex flex-col pl-8 pt-16">
+          <div className="flex flex-col md:pl-8 pt-16">
             <img src={BikeIcon} alt="" className="w-20" />
             <h2 className="font-inter font-extrabold text-4xl pt-4">
               Custom Designs
@@ -132,57 +132,67 @@ function About() {
         client satisfaction. Here’s what our clients have to say about their
         experience with us.
       </p>
-      <Carousel autoPlay infiniteLoop interval={5000} showArrows={false} showStatus={false}>
-        <Testimonial
-          body="5 stars for the services and the way they attend to the customers.
+      <div style={{ width: "100%" }}>
+        <Carousel
+          autoPlay
+					dynamicHeight
+          infiniteLoop
+          interval={5000}
+          showArrows={false}
+          showStatus={false}
+          width="100%"
+        >
+          <Testimonial
+            body="5 stars for the services and the way they attend to the customers.
             Mainly the owner, Jeevan Reddy. Best and trusted service center."
-          name="Amir MA"
-        />
-        <Testimonial
-          body="I just gave my Passion XPro for general service. Nice friendly customer service."
-          name="Moses Paul"
-        />
-        <Testimonial
-          body="Excellent and root level service. In the year 2017 I have faced engine problem in my ten year old bike but after enquiring in authorized showroom they informed me it as major problem and given estimation cost of Rs 14000/- to repair the bike with only three months guarantee, then as a second opinion I've met Mototech multi brand bike service for the first time and met Mr.jeevan and showed my bike,  he had resolved my bike engine issue in a much much reasonable price and still my bike is working fine without any issues and with increased engine smoothness. Sincere staff, No cheating and good at receiving customers. Thank you."
-          name="Sandeep Nethi"
-        />
-				<Testimonial
-          body="Nice staff and they are good at servicing."
-          name="Prakhar Pandey"
-        />
-				<Testimonial
-          body="One of the best bike service points. I loved the transparency shown by Mr. Jeevan, the owner.. Each n every detail was shared by him, and the best point the service cost was so amazing and economic.Thank you Mr. Jeevan"
-          name="Nish Vines"
-        />
-				<Testimonial
-          body="Excellent work done and nice reception. Impressed by the work done and the cost was economical. I truly recommend this."
-          name="Vajeed Abdul"
-        />
-				<Testimonial
-          body="Experienced mechanics with good service and value for your time with on time service."
-          name="Ruthvik Raj"
-        />
-				<Testimonial
-          body="The team is really good with their service and delivers the vehicle on time."
-          name="Allen Joseph"
-        />
-				<Testimonial
-          body="Give them the bike and have it done your way. Loyal people with no fake business work. It's been two years since I have been trusting them."
-          name="Chanakya Sharma"
-        />
-				<Testimonial
-          body="Best place for all your two-wheeler repairs. I would strongly recommend everyone to visit this place. Thank you for the service"
-          name="Flint Eastwood Thomas"
-        />
-				<Testimonial
-          body="Always been more than satisfied with my delivery. I take all my friends' bikes to him as well. They're that great!"
-          name="Johnson D’souza"
-        />
-				<Testimonial
-          body="If you need your two-wheeler serviced this is the place to go!!"
-          name="Vanam Mahesh Kumar"
-        />
-      </Carousel>
+            name="Amir MA"
+          />
+          <Testimonial
+            body="I just gave my Passion XPro for general service. Nice friendly customer service."
+            name="Moses Paul"
+          />
+          <Testimonial
+            body="Excellent and root level service. In the year 2017 I have faced engine problem in my ten year old bike but after enquiring in authorized showroom they informed me it as major problem and given estimation cost of Rs 14000/- to repair the bike with only three months guarantee, then as a second opinion I've met Mototech multi brand bike service for the first time and met Mr.jeevan and showed my bike,  he had resolved my bike engine issue in a much much reasonable price and still my bike is working fine without any issues and with increased engine smoothness. Sincere staff, No cheating and good at receiving customers. Thank you."
+            name="Sandeep Nethi"
+          />
+          <Testimonial
+            body="Nice staff and they are good at servicing."
+            name="Prakhar Pandey"
+          />
+          <Testimonial
+            body="One of the best bike service points. I loved the transparency shown by Mr. Jeevan, the owner.. Each n every detail was shared by him, and the best point the service cost was so amazing and economic.Thank you Mr. Jeevan"
+            name="Nish Vines"
+          />
+          <Testimonial
+            body="Excellent work done and nice reception. Impressed by the work done and the cost was economical. I truly recommend this."
+            name="Vajeed Abdul"
+          />
+          <Testimonial
+            body="Experienced mechanics with good service and value for your time with on time service."
+            name="Ruthvik Raj"
+          />
+          <Testimonial
+            body="The team is really good with their service and delivers the vehicle on time."
+            name="Allen Joseph"
+          />
+          <Testimonial
+            body="Give them the bike and have it done your way. Loyal people with no fake business work. It's been two years since I have been trusting them."
+            name="Chanakya Sharma"
+          />
+          <Testimonial
+            body="Best place for all your two-wheeler repairs. I would strongly recommend everyone to visit this place. Thank you for the service"
+            name="Flint Eastwood Thomas"
+          />
+          <Testimonial
+            body="Always been more than satisfied with my delivery. I take all my friends' bikes to him as well. They're that great!"
+            name="Johnson D’souza"
+          />
+          <Testimonial
+            body="If you need your two-wheeler serviced this is the place to go!!"
+            name="Vanam Mahesh Kumar"
+          />
+        </Carousel>
+      </div>
     </div>
   );
 }

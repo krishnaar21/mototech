@@ -17,19 +17,19 @@ function Header() {
       </div>
 
       {/* body container */}
-      <div className="absolute w-1/2 h-full flex flex-col z-10 items-start px-24">
-        <div className="flex z-10 pt-12">
+      <div className="absolute md:w-1/2 w-full h-full flex flex-col z-10 items-start md:px-24 px-8">
+        <div className="flex z-10 md:pt-12 pt-8">
           <img src={Logo} alt="" />
         </div>
 
         <div className="flex flex-col flex-1 justify-center items-start">
-          <h2 className="font-poppins text-burnt-orange text-4xl font-bold pb-2">
+          <h2 className="font-poppins text-burnt-orange md:text-4xl text-2xl font-bold pb-2">
             SMOOTH RIDES,
           </h2>
-          <h1 className="font-tomorrow text-white font-semibold text-7xl pb-8">
+          <h1 className="font-tomorrow text-white font-semibold md:text-7xl text-4xl pb-8">
             GUARANTEED!
           </h1>
-          <p className="font-poppins text-light-grey text-2xl pb-12">
+          <p className="font-poppins text-light-grey md:text-2xl text-xl pb-12">
             Power and precision to keep your vehicle fit and make your ride
             better.
           </p>
@@ -40,7 +40,7 @@ function Header() {
         </div>
 
         <div className="flex flex-col h-1/4 w-full justify-center items-start">
-          <img src={AboutBike} alt="" className="h-2/5" />
+          <img src={AboutBike} className="w-24 md:w-auto" alt="" />
 					<h2 className="text-4xl text-burnt-orange font-tomorrow font-bold pt-4">ABOUT US</h2>
         </div>
       </div>

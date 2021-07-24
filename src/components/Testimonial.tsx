@@ -7,7 +7,7 @@ interface TestimonialProps {
 
 function Testimonial({body, name}: TestimonialProps) {
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col w-full items-start justify-center">
       <p className="font-poppins pt-4 text-xl text-left">
         “{body}”
       </p>

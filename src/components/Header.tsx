@@ -34,9 +34,11 @@ function Header() {
             better.
           </p>
 
-          <button className="font-tomorrow font-medium text-white text-xl bg-burnt-orange px-4 py-2 rounded-none">
-            CONTACT US
-          </button>
+          <a href="https://wa.me/+917095813250">
+            <button className="font-tomorrow font-medium text-white text-xl bg-burnt-orange px-4 py-2 rounded-none">
+              CONTACT US
+            </button>
+          </a>
           <div className="md:hidden block w-full h-32"></div>
         </div>
 

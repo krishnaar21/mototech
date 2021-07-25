@@ -45,7 +45,7 @@ function Footer() {
               +91 91004 02098
             </p>
             <p className="font-poppins text-white md:text-2xl text-lg pt-2">
-              +91 7095813250
+              +91 70958 13250
             </p>
 
             <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl pt-16">

@@ -13,8 +13,21 @@ import Mahindra from "../drawables/mahindralogo.svg";
 import Vespa from "../drawables/vespalogo.svg";
 import Aprilia from "../drawables/aprilialogo.svg";
 import Jawa from "../drawables/jawalogo.svg";
+import bike1 from "../drawables/carousel/1.webp";
+import bike2 from "../drawables/carousel/2.webp";
+import bike3 from "../drawables/carousel/3.webp";
+import bike4 from "../drawables/carousel/4.webp";
+import bike5 from "../drawables/carousel/5.webp";
+import bike6 from "../drawables/carousel/6.webp";
+import bike7 from "../drawables/carousel/7.webp";
+import bike8 from "../drawables/carousel/8.webp";
+import bike9 from "../drawables/carousel/9.webp";
+import bike10 from "../drawables/carousel/10.webp";
+import bike11 from "../drawables/carousel/11.webp";
+import bike12 from "../drawables/carousel/12.webp";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import GCarousel from "react-grid-carousel";
 import Testimonial from "./Testimonial";
 import "./About.css";
 
@@ -71,18 +84,58 @@ function About() {
       <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl pt-16">
         EXPERTS IN EVERY BRAND
       </h2>
-      <div className="flex w-full overflow-x-auto pt-8">
-        <img src={Enfield} alt="" />
-        <img src={Davidson} alt="" className="pl-8" />
-        <img src={KTM} alt="" className="pl-8" />
-        <img src={Hero} alt="" className="pl-8" />
-        <img src={Yamaha} alt="" className="pl-8" />
-        <img src={Suzuki} alt="" className="pl-8" />
-        <img src={Bajaj} alt="" className="pl-8" />
-        <img src={Mahindra} alt="" className="pl-8" />
-        <img src={Vespa} alt="" className="pl-8" />
-        <img src={Aprilia} alt="" className="pl-8" />
-        <img src={Jawa} alt="" className="pl-8" />
+      <div className=" w-full o pt-8">
+        <GCarousel
+          cols={4}
+          rows={1}
+          loop={true}
+          autoplay={2000}
+          gap={0}
+          hideArrow={true}
+          responsiveLayout={[
+            {
+              breakpoint: 768,
+              cols: 2,
+              rows: 1,
+              loop: true,
+              autoplay: 4000,
+            },
+          ]}
+        >
+          <GCarousel.Item>
+            <img width="100%" src={Enfield} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Davidson} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={KTM} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Hero} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Yamaha} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Suzuki} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Bajaj} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Mahindra} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Vespa} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Aprilia} alt="" className="pl-8" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={Jawa} alt="" className="pl-8" />
+          </GCarousel.Item>
+        </GCarousel>
       </div>
 
       <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl pt-16">
@@ -94,37 +147,60 @@ function About() {
       <p className="font-poppins text-dark-grey text-xl">
         Check out some of our amazing motorbike transformations.
       </p>
-      <Carousel>
-        <div>
-          <img
-            alt=""
-            src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg"
-          />
-          <p className="legend">Legend 1</p>
-        </div>
-        <div>
-          <img
-            alt=""
-            src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg"
-          />
-          <p className="legend">Legend 2</p>
-        </div>
-        <div>
-          <img
-            alt=""
-            src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg"
-          />
-          <p className="legend">Legend 3</p>
-        </div>
-        <div>
-          <img
-            alt=""
-            src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg"
-          />
-          <p className="legend">Legend 4</p>
-        </div>
-      </Carousel>
-
+      <div className="mx-auto my-4">
+        <GCarousel
+          cols={3}
+          rows={2}
+          loop={true}
+          autoplay={false}
+          responsiveLayout={[
+            {
+              breakpoint: 800,
+              cols: 1,
+              rows: 2,
+              gap: 10,
+              loop: true,
+            },
+          ]}
+        >
+          <GCarousel.Item>
+            <img width="100%" src={bike1} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike2} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike3} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike4} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike5} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike6} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike7} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike8} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike9} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike10} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike11} alt="" />
+          </GCarousel.Item>
+          <GCarousel.Item>
+            <img width="100%" src={bike12} alt="" />
+          </GCarousel.Item>
+        </GCarousel>
+      </div>
       <h2 className="font-tomorrow font-bold text-burnt-orange text-4xl pt-16">
         WHAT OUR CLIENTS SAY
       </h2>

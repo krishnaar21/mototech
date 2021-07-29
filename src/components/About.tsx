@@ -153,6 +153,52 @@ function About() {
           rows={2}
           loop={true}
           autoplay={false}
+          showDots
+          dot={({ isActive }: { isActive: boolean }) => {
+            if (isActive) {
+              return (
+                <li className="inline-block px-1 cursor-pointer">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.970566"
+                      y="12"
+                      width="16"
+                      height="16"
+                      transform="rotate(-45 0.970566 12)"
+                      fill="#FE4D01"
+                    />
+                  </svg>
+                </li>
+              );
+            } else {
+              return (
+                <li className="inline-block px-1 cursor-pointer">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      opacity="0.25"
+                      y="9"
+                      width="12"
+                      height="12"
+                      transform="rotate(-45 0 9)"
+                      fill="black"
+                    />
+                  </svg>
+                </li>
+              );
+            }
+          }}
           responsiveLayout={[
             {
               breakpoint: 800,
@@ -160,6 +206,7 @@ function About() {
               rows: 2,
               gap: 10,
               loop: true,
+              showDots: true,
             },
           ]}
         >

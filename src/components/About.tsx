@@ -27,6 +27,7 @@ import bike11 from "../drawables/carousel/11.webp";
 import bike12 from "../drawables/carousel/12.webp";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+// @ts-ignore
 import GCarousel from "react-grid-carousel";
 import Testimonial from "./Testimonial";
 import "./About.css";

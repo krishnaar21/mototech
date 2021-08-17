@@ -143,7 +143,7 @@ function About() {
           dot={({ isActive }: { isActive: boolean }) => {
             if (isActive) {
               return (
-                <li className="inline-block px-1 cursor-pointer">
+                <li className="inline-block px-1 mt-8 cursor-pointer">
                   <svg
                     width="24"
                     height="24"
@@ -164,7 +164,7 @@ function About() {
               );
             } else {
               return (
-                <li className="inline-block px-1 cursor-pointer">
+                <li className="inline-block px-1 mt-8 cursor-pointer">
                   <svg
                     width="17"
                     height="18"

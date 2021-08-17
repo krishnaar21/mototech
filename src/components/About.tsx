@@ -25,6 +25,12 @@ import bike9 from "../drawables/carousel/9.webp";
 import bike10 from "../drawables/carousel/10.webp";
 import bike11 from "../drawables/carousel/11.webp";
 import bike12 from "../drawables/carousel/12.webp";
+
+import logo1 from "../drawables/1.webp";
+import logo2 from "../drawables/2.webp";
+import logo3 from "../drawables/3.webp";
+import logo4 from "../drawables/4.webp";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 // @ts-ignore
@@ -87,7 +93,7 @@ function About() {
       </h2>
       <div className=" w-full o pt-8">
         <GCarousel
-          cols={4}
+          cols={3}
           rows={1}
           loop={true}
           autoplay={2000}
@@ -95,7 +101,7 @@ function About() {
           hideArrow={true}
           responsiveLayout={[
             {
-              breakpoint: 768,
+              breakpoint: 1280,
               cols: 2,
               rows: 1,
               loop: true,
@@ -104,37 +110,16 @@ function About() {
           ]}
         >
           <GCarousel.Item>
-            <img width="100%" src={Enfield} alt="" />
+            <img width="100%" src={logo1} alt="" />
           </GCarousel.Item>
           <GCarousel.Item>
-            <img width="100%" src={Davidson} alt="" className="pl-8" />
+            <img width="100%" src={logo2} alt="" className="pl-8" />
           </GCarousel.Item>
           <GCarousel.Item>
-            <img width="100%" src={KTM} alt="" className="pl-8" />
+            <img width="100%" src={logo3} alt="" className="pl-8" />
           </GCarousel.Item>
           <GCarousel.Item>
-            <img width="100%" src={Hero} alt="" className="pl-8" />
-          </GCarousel.Item>
-          <GCarousel.Item>
-            <img width="100%" src={Yamaha} alt="" className="pl-8" />
-          </GCarousel.Item>
-          <GCarousel.Item>
-            <img width="100%" src={Suzuki} alt="" className="pl-8" />
-          </GCarousel.Item>
-          <GCarousel.Item>
-            <img width="100%" src={Bajaj} alt="" className="pl-8" />
-          </GCarousel.Item>
-          <GCarousel.Item>
-            <img width="100%" src={Mahindra} alt="" className="pl-8" />
-          </GCarousel.Item>
-          <GCarousel.Item>
-            <img width="100%" src={Vespa} alt="" className="pl-8" />
-          </GCarousel.Item>
-          <GCarousel.Item>
-            <img width="100%" src={Aprilia} alt="" className="pl-8" />
-          </GCarousel.Item>
-          <GCarousel.Item>
-            <img width="100%" src={Jawa} alt="" className="pl-8" />
+            <img width="100%" src={logo4} alt="" className="pl-8" />
           </GCarousel.Item>
         </GCarousel>
       </div>
